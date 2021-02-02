@@ -1,0 +1,21 @@
+const readlineSync = require("readline-sync");
+let sum = 0;
+
+for (grades = 0; grades < 3; grades++) {
+  let grades = readlineSync.question("Input grades: ");
+  grades = parseFloat(grades);
+  sum += grades;
+}
+
+let avg = sum / 3;
+console.log(avg);
+
+if(avg>=7){
+    console.log("Good job! ");
+}
+else if(avg>=4 && avg<=6){
+    console.log("You need to work harder! ");
+}
+else if(avg<4){
+    console.log("Failed,you really need to work harder! ")
+}
