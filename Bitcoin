@@ -1,0 +1,11 @@
+const readlineSync = require("readline-sync");
+
+let bitcoin = readlineSync.question("Input bitcoin: ");
+let increase = readlineSync.question("Input increase: ");
+
+bitcoin = parseFloat(bitcoin);
+increase = parseFloat(increase);
+
+let totalBitcoin = (bitcoin * increase) / 100;
+
+console.log(totalBitcoin + bitcoin);
