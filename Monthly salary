@@ -1,0 +1,12 @@
+const readlineSync = require("readline-sync");
+
+let minimumWage = readlineSync.question("Minimum wage: ");
+let yearsEmployed = readlineSync.question("Years employed: ");
+let children = readlineSync.question("Number of children");
+
+minimumWage = parseFloat(minimumWage);
+yearsEmployed = parseFloat(yearsEmployed * 20);
+children = parseFloat(children * 30);
+
+totalAmount = minimumWage + yearsEmployed + children;
+console.log( `The total amount is ${totalAmount}.${minimumWage} minimum wage + ${yearsEmployed} for years experience + ${children}for kids`);
