@@ -1,0 +1,7 @@
+const readlineSync = require("readline-sync");
+
+let width = readlineSync.question("width: ");
+let height = readlineSync.question("height: ");
+
+let total = width * height;
+console.log(total);
