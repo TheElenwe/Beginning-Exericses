@@ -1,0 +1,8 @@
+const readlineSync = require("readline-sync");
+
+const priceLaptop =Number(readlineSync.question("Input the price laptop: "));
+const tax =Number(readlineSync.question("Input Tax: "));
+
+let total= (priceLaptop *tax)/100;
+let totalAmount = priceLaptop+total
+console.log(totalAmount)
