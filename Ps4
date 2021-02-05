@@ -1,0 +1,18 @@
+const readlineSync = require("readline-sync");
+
+let daysWorked = readlineSync.question(" Days worked : ");
+
+daysWorked = parseFloat(daysWorked * 30);
+
+let ps4 = 200;
+let samsungPhone = 900;
+let tv = 500;
+let gameSkin = 9.99;
+
+let totalPs4 = (daysWorked / ps4) | 0;
+let totalSamsungPhone = (daysWorked / samsungPhone) | 0;
+let totalTV = (daysWorked / tv) | 0;
+let totalGameSkin = (daysWorked / gameSkin) | 0;
+console.log(
+  `I have ${daysWorked}$ money, I can by ${totalPs4} PS4, ${totalSamsungPhone} Samsung, ${totalTV} TV, ${totalGameSkin} game skin`
+);
