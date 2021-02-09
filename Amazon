@@ -1,0 +1,18 @@
+const readlineSync = require('readline-sync');
+   
+   const costProduct = Number(readlineSync.question("Input cost of the product: "));
+   const location = readlineSync.question("Chose a location! Press US or Europe or Canada or other places: ");
+
+    if(location ==="US"){
+      const location=5;
+        console.log("You have to pay",costProduct + location,"$,",costProduct,"$ for the profuct and ",location,"for shopping cost")
+    }else if(location ==="Europe"){
+        const location=7;
+        console.log("You have to pay",costProduct + location,"$,",costProduct,"$ for the profuct and ",location,"for shopping cost")
+    }else if(location ==="Canada"){
+        const location=3;
+        console.log("You have to pay",costProduct + location,"$,",costProduct,"$ for the profuct and ",location,"for shopping cost")
+    }else if(location ==="other places"){
+        const location=9;
+        console.log("You have to pay",costProduct + location,"$,",costProduct,"$ for the profuct and ",location,"for shopping cost")
+    }
