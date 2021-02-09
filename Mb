@@ -1,0 +1,17 @@
+const readlineSync = require('readline-sync');
+
+  let wikipediaMb = readlineSync.question("Wikipedia Mb consupmtion: ");
+  let watchingMemeMb = readlineSync.question("Watching meme Mb consumption:");
+
+ wikipediaMb = parseFloat(wikipediaMb * 0.10);
+ watchingMemeMb = parseFloat(watchingMemeMb * 0.05);
+
+ let totalAmount = wikipediaMb + watchingMemeMb
+   console.log("The total amount consumption is ",totalAmount)
+   console.log(`wikipedia Mb is ${wikipediaMb} and watching meme Mb is ${watchingMemeMb}`)
+    if(totalAmount >100){
+        console.log("Too much consumption");
+    }else if(watchingMemeMb >wikipediaMb){
+        console.log("WOW MANY MEMES")
+    }
+    
