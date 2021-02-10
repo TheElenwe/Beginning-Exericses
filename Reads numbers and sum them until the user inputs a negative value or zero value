@@ -1,0 +1,13 @@
+const readlineSync = require("readline-sync");
+
+let sum = 0;
+let entry = 0;
+while (entry >= 0) {
+  sum += entry;
+  entry = Number(readlineSync.question("give me number: "));
+
+  if (entry === 0) {
+    break;
+  }
+}
+console.log(`The sum is: ${sum}`);
