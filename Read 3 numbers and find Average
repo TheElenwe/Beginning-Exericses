@@ -1,11 +1,9 @@
 const readlineSync = require("readline-sync");
-let sum = 0;
 
-for (grades = 0; grades < 3; grades++) {
-  let grades = readlineSync.question("Input grades: ");
-  grades = parseFloat(grades);
-  sum += grades;
-}
+const geomtry = Number(readlineSync.question("Input Geometry grade: "));
+const algebra = Number(readlineSync.question("Input Algebra grade: "));
+const physics = Number(readlineSync.question("Input Physics grade: "));
 
-let avg = sum / 3;
-console.log(avg);
+const sum = geomtry + algebra + physics;
+const avg = sum / 3;
+console.log(`The average of these grades is: ${avg}`);
