@@ -1,0 +1,10 @@
+const readlineSync = require("readline-sync");
+
+for (number = 0; number < 5; number++) {
+  const number = readlineSync.question("Give me number: ");
+  if (number > 0) {
+    console.log("Positive");
+  } else {
+    console.log("Negative");
+  }
+}
