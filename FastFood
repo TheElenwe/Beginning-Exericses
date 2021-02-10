@@ -1,0 +1,16 @@
+const readlineSync = require('readline-sync');
+ 
+ const  meal = readlineSync.question("What meal you want? Buger,Pizza or Hot Dog?:");
+
+   if (meal ==="Burger"){
+      const meal=5;
+      console.log(`Burger ${meal}$`)
+   }else if (meal ==="Pizza"){
+       const meal=3;
+       console.log(`Pizza ${meal}$`)
+   }else if (meal ==="Hot Dog"){
+       const meal=1.5 ;
+       console.log(`Hot Dog ${meal}$`)
+   }else {
+       console.log("Input not valid.Try again")
+   }
