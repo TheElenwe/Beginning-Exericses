@@ -1,0 +1,9 @@
+const readlineSync = require("readline-sync");
+let sum = 0;
+
+for (numbers = 0; numbers < 5; numbers++) {
+  const numbers = Number(readlineSync.question("Give me number:"));
+  sum = sum + numbers;
+}
+avg = sum / numbers;
+console.log(avg);
