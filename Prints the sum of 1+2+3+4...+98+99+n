@@ -1,0 +1,9 @@
+const readlineSync = require("readline-sync");
+number = Number(readlineSync.question("Give me number:"));
+let sum = 0;
+for (i = 0; i < 99; i++) {
+  sum = sum + (i + 1);
+  console.log(sum);
+  NumberSum = sum + number;
+}
+console.log(`+ Extra number ${NumberSum} `);
