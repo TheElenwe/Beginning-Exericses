@@ -1,0 +1,14 @@
+const readlineSync = require("readline-sync");
+
+number = readlineSync.question("Give number:");
+while (number >= 0) {
+  console.log(number);
+  number--;
+  if (number < 0) {
+    console.log("GO!");
+  }
+  if (number < 0) {
+    number = readlineSync.question("Give me number: ");
+    console.log("Quit Program");
+  }
+}
