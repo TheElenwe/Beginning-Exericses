@@ -1,0 +1,22 @@
+const readlineSync = require('readline-sync');
+  let headCount=0;
+  let tailCount=0;
+  while(true){
+    let flippedCoin = readlineSync.question("Iput head or tail: ");
+    if (flippedCoin ==="head"){
+      headCount++
+     }else if (flippedCoin ==="tail"){
+       tailCount++
+     }else if(flippedCoin ==="stop"){
+       break;
+     }
+  }
+ console.log(`Head won ${headCount} times and tails won ${tailCount} times`);
+    
+    const sumHeadTail= headCount + tailCount;
+     const sumPercent = 100 / sumHeadTail
+     const headPercent = sumPercent * headCount;
+     const tailsPercent = sumPercent * tailCount;
+    
+     console.log(`${headPercent}% Head, ${tailsPercent}% Tail`)
+     
