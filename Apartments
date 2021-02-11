@@ -1,0 +1,24 @@
+const readlineSync = require('readline-sync');
+ 
+  let sum=0;
+  let counter=0;
+  let apartments= Number(readlineSync.question("Input values apartemnts: "));
+  while(apartments>0){
+    sum+=apartments;
+    counter++
+    apartments = Number(readlineSync.question("Input values apartments: "));
+  }
+  const avg = sum/counter
+  console.log(`${counter} apartments have registed. The average price of rent is ${avg}`);
+
+  while(true){
+    const apartments= Number(readlineSync.question("Input prices to compare with the average: "));
+    if(apartments <1){
+      console.log("Quit program");
+      break;
+    }if (apartments > avg){
+      console.log("Above average price ");
+    }else{
+      console.log("Bellow average price ");
+    }
+  }
