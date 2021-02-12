@@ -27,4 +27,4 @@ console.log(avg);
    console.log("salary is bellow average ");
  }
  }
-console.log(employeeNames)
+console.log(`Total Employees: ${employeeNames} `)
