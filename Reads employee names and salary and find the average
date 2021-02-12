@@ -1,0 +1,27 @@
+const readlineSync = require("readline-sync");
+let sum = 0;
+let counter = 0;
+while (true) {
+  const employeeNames = readlineSync.question("Employee names: ");
+
+  if (employeeNames === "quit") {
+    break;
+  }
+  const salary = Number(readlineSync.question("Salary: "));
+  sum += salary;
+  counter++;
+}
+const avg = sum / counter;
+console.log(avg);
+
+ while(true){
+   const salary = readlineSync.question("Input employee salary Again!!...if is above or below average salary: ");
+ if(salary ==="quit"){
+   break;
+ }
+ if(salary>avg){
+   console.log("salary is above average");
+ }else {
+   console.log("salary is bellow average ");
+ }
+ }
