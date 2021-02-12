@@ -1,0 +1,13 @@
+const readlineSync = require("readline-sync");
+let sum = 0;
+for (employeeName = 0; employeeName < 20; employeeName++) {
+  let employeeName = readlineSync.question("Employee name: ");
+
+  if (employeeName === "quit") {
+    employeeName++;
+    break;
+  }
+  const salary = Number(readlineSync.question("Salary: "));
+  sum += salary;
+}
+console.log(`${employeeName} employees and the total amount of salary is ${sum}$`);
