@@ -1,0 +1,15 @@
+const readlineSync = require("readline-sync");
+
+const userName = readlineSync.question("Username: ");
+const password = readlineSync.question("Password: ");
+const photo = readlineSync.question("Pho has photo? yes or no?: ");
+
+while (true) {
+  email = readlineSync.question("Email: ");
+  if (email === "elenwe97@hotmail.com") {
+    break;
+  } else {
+    console.log("Incorrect.Try again: ");
+  }
+}
+console.log( `userName:${userName}, Password:${password}, HasPhoto:${photo}, Email:${email}`);
