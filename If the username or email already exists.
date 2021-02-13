@@ -1,0 +1,15 @@
+const readlineSync = require("readline-sync");
+
+
+const userName = readlineSync.question("Username: ");
+if(userName==="ilias"){
+    console.log("userName already exists ");
+}
+const password = readlineSync.question("Password: ");
+const salary = readlineSync.question("Salary: ");
+const email = readlineSync.question("Email: ");
+if(email==="elenwe97@hotmail.com"){
+    console.log("Email already exists ");
+}
+
+console.log(`userName:${userName}, Password:${password}, HasPhoto:${salary}, Email:${email}`);
