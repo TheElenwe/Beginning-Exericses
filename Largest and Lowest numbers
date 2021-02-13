@@ -1,0 +1,17 @@
+const readlineSync = require("readline-sync");
+
+let number = 0;
+let largest = Number.MIN_VALUE;
+let lowest = Number.MAX_VALUE;
+
+for (let i = 0; i < 5; i++) {
+  number = readlineSync.question("Give me number: ");
+  if (number > largest) {
+    largest = number;
+  }
+  if (number < lowest) {
+    lowest = number;
+  }
+}
+console.log("Largest number is: ",largest);
+console.log("Lowest number is: ",lowest);
