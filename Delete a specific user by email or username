@@ -1,0 +1,23 @@
+const readlineSync = require("readline-sync");
+
+for (i = 0; i < 10; i++) {
+  userName = readlineSync.question("Username: ");
+  if (userName === "ilias") {
+    console.log("userName already exist ");
+  }
+  if (userName === "stop") {
+    break;
+  }
+  email = readlineSync.question("Email: ");
+  if (email === "elenwe97@hotmail.com") {
+    console.log("Email already exist ");
+  }
+  if (email === "stop") {
+    break;
+  }
+}
+
+email = readlineSync.question("You want to delete a specific user by Username;? yes or no");
+if (email === "yes") {
+  console.log("this user has been deleted");
+}
