@@ -1,13 +1,12 @@
 const readlineSync = require("readline-sync");
 
-let money = readlineSync.question("Total amount of money: ");
-let bitcoin = readlineSync.question("Bitcoin: ");
-let ethereum = readlineSync.question("Ethereum: ");
-let litecoin = readlineSync.question("Litecoin: ");
-let sum = 0;
+const money = readlineSync.question(" Input total amount of money you have: ");
+const bitcoin = readlineSync.question("Bitcoin: ");
+const ethereum = readlineSync.question("Ethereum: ");
+const litecoin = readlineSync.question("Litecoin: ");
 
-bitcoin = parseFloat(bitcoin - 48);
-ethereum = parseFloat(ethereum - 21);
-litecoin = parseFloat(litecoin);
 
-console.log(`With 100$ you can buy:  ${bitcoin} Bitcoins  ${ethereum} Ethereum  ${litecoin} Litecoin`);
+ const totalbitcoin = money / bitcoin;
+ const totalethereum = money / ethereum;
+ const totallitecoin = money / litecoin
+console.log(`With 100$ you can buy:  ${totalbitcoin} Bitcoins  ${totalethereum} Ethereum  ${totallitecoin} Litecoin`);
